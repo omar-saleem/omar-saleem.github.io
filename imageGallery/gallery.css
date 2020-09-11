@@ -1,0 +1,59 @@
+body{
+padding-top: 70px;
+}
+
+.jumbotron{
+	color: #2C3E50;
+	background-color: #ECF0F1; 
+}
+
+.navbar-inverse{
+	background-color: #2C3E50;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+.footer-button:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+ }
+ .footer-button {
+ 	padding: 0 4px;
+    -webkit-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+    -o-transform: scale(1.0);
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+ }
+
+#about{
+	color: #2C3E50;
+	background-color: #ECF0F1; 
+	padding: 20px 0;
+	margin: 10px 0 20px 0;
+}
+
+#about p{
+	margin-bottom: 0;
+	font-weight: 400;
+	font-size: 18px;
+	font-family: Arvo, serif;
+}
+
+
+p{
+	font-family: Kumbh Sans, serif;
+}
+
+h1{
+	font-family: Arvo, serif;
+	font-weight: 700;
+}

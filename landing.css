@@ -10,10 +10,6 @@ body{
 	font-family: Kumbh Sans, serif;	
 }
 
-.px70{
-	margin-top: 70px;
-}
-
 .navbar-brand{
 	font-weight: 700;
 }
@@ -21,6 +17,7 @@ body{
 #avatar{
 	width: 180px;
 	border-radius: 25%;
+	margin-top: 20px;
 }
 
 #main-content{

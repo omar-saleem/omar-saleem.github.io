@@ -2,8 +2,6 @@ html{
   font-size: 62.5%;
 }
 
-/* check for px in the end */
-
 body {
   background-color: #C7C9F7;
   margin: 0;
@@ -25,6 +23,10 @@ body {
 .spacer {
   width: 100%;
   margin: 0;
+}
+
+.mobile-hide{
+  display: none;
 }
 
 .sticky-nav{
@@ -147,7 +149,7 @@ aside{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 76rem;
+  height: 81rem;
   /* max-height: 90vh; */
   align-items: center;
   position: relative;
@@ -157,7 +159,7 @@ aside{
   background-color: rgb(0, 21, 93);
   color: white;
 
-  height: 40rem;
+  height: 45rem;
   width: 100%;
 
   justify-self: flex-start;
@@ -242,17 +244,17 @@ aside{
 }
 
 .library__book img{
-  width: 44%;
+  width: 48%;
   padding-left: 1rem;
 }
 
 .library__book__info{
-  width: 44%;
+  width: 40%;
 }
 
 .library__book h3{
   padding-left: 0;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-weight: 600;
   margin-bottom: 0;
   margin-top: 0;
@@ -274,7 +276,7 @@ aside{
 
 .library__book p{
   padding-left: 0;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   margin-top: 0.6rem;
   color: rgb(133, 133, 133);
 }
@@ -326,10 +328,11 @@ aside{
 }
 
 .outro h3{
-  padding-top: 4rem;
+  padding-top: 2rem;
   font-size: 2.4rem;
   font-weight: 600;
   margin-bottom: 0;
+  padding-bottom: 2rem;
   margin-top: 0;
   color: black;
 }
@@ -359,6 +362,7 @@ footer{
   height: 20rem;
   width: 100% - 2rem;
   background-color: #1741b4;
+  text-align: center;
 }
 
 footer a{
@@ -367,13 +371,19 @@ footer a{
   font-size: 1.4rem;
 }
 
+footer .links{
+  display:flex;
+  justify-content: space-evenly;
+}
+
 footer p{
   color: white;
 }
 
-/* FOR DESKTOP */
 
-@media only screen and (min-width: 768px){
+/* FOR TABLETS */
+
+@media only screen and (min-width: 520px){
 
   body {
     background-color: #C7C9F7;
@@ -381,6 +391,378 @@ footer p{
     padding: 0;
     margin-right: 0;
     /* font-size: 16px; */
+    font-size: 1.6rem; 
+    line-height: 1.5; 
+  
+    font-family: 'PT Sans', sans-serif;
+  }
+  
+  .container {
+    background-color: white;
+    max-width: 97%;
+    margin: 0 auto;
+  }
+  
+  .spacer {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .sticky-nav{
+    position: sticky;
+    top: 0;
+    z-index:10;
+    background-color: white;
+  }
+  */
+  
+  .navbar-2{
+    position: sticky;
+    top: 0px;
+  }
+  
+  ul.navbar-2{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content:center;
+    align-items: center;
+    height: 5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .desktop-only{
+    display: none;
+  }
+  
+  .mobile-only{
+    display: initial;
+  }
+  
+  ul.navbar-1{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    margin: 0;
+    padding: 0;
+    
+    border-bottom: 0.1rem solid #dfdfdf;
+  }
+  
+  .navbar-2 li{
+    flex: 0 0 auto;
+    padding: 0 2%;
+  }
+  
+  .navbar-2 a, .navbar-1 a{
+    color: black;
+    text-decoration: none;
+  }
+  
+  .navbar-1__in-logo{
+    background-color: white;
+    color: rgb(226, 66, 114);
+    font-size: 2.4rem;
+    padding-left: 2.4rem;
+  }
+  
+  .navbar-1__burger{
+    font-size: 2rem;
+    padding-right: 2.4rem;
+  }
+  
+  .btn {
+    margin-left: auto;
+    margin-right: 3%
+  }
+  
+  .btn--subscribe{
+    color: white;
+    background-color: rgb(216, 40, 93);
+    border: 0;
+    border-radius: 2rem;
+    padding: 0.6rem 1.6rem;
+    font-size: 1.6rem;
+  }
+  
+  aside .fa-twitter, aside .fa-facebook-f, aside .fa-linkedin-in, aside .fa-link {
+    background-color: white;
+    color: #0828CC;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  div.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #0828CC;
+    border-radius: 50%;
+    margin-bottom: 0.8rem;
+    background-color: white;
+  }
+  
+  aside{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 1.5%;
+    right: 2%;
+  }
+  
+  .logo{
+    font-weight: 600;
+    font-size: 2.4rem;
+  }
+  
+  .intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 76rem;
+    /* max-height: 90vh; */
+    align-items: center;
+    position: relative;
+  }
+  
+  .intro__heading{
+    background-color: rgb(0, 21, 93);
+    color: white;
+  
+    height: 40rem;
+    width: 100%;
+  
+    justify-self: flex-start;
+    box-sizing: border-box;
+    padding: 6%;
+    padding-top: 1%;
+    padding-right: 4%;
+  }
+  
+  .intro__heading h1{
+    font-size: 4.4rem;
+    font-family: Prompt, sans-serif;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    margin-top: 2.4rem;
+  }
+  
+  .intro__heading p{
+    font-size: 1.8rem;
+    line-height: 200%;
+  }
+  
+  .btn--intro{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00155D;
+    background-color: #54F5AF;
+    padding: 1.8rem 3.6rem;
+    border: none;
+    border-radius: 20rem;
+    margin-bottom: 3rem;
+  }
+  
+  .intro__photo{
+    width: 100%;
+    height: 36rem;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://s3.amazonaws.com/designco-web-assets/uploads/2020/07/Cover-min.png");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  
+  .library{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 1rem;
+  }
+  
+  .library__intro{
+    text-align: center;
+    padding: 1.2rem 2rem 7rem 2rem;
+  }
+  
+  .library__intro__books{
+    font-size: 1.4rem !important;
+    letter-spacing: 0.1rem !important;
+    font-weight: 600 !important;
+  }
+  
+  .library__intro h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 1.2rem;
+    padding-top: 1.2rem;
+  }
+  
+  .library__intro p{
+    font-size: 2rem;
+  }
+  
+  .library__book{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 4rem;
+  }
+  
+  .library__book img{
+    width: 44%;
+    padding-left: 1rem;
+  }
+  
+  .library__book__info{
+    width: 44%;
+  }
+  
+  .library__book h3{
+    padding-left: 0;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: black;
+  }
+  
+  .library__book a{
+    text-decoration: none;
+  }
+  
+  .library__book a:visited{
+    color: black;
+  }
+  
+  .library__book a:hover{
+    text-decoration: underline;
+    color: rgb(0, 119, 255);
+  }
+  
+  .library__book p{
+    padding-left: 0;
+    font-size: 1.7rem;
+    margin-top: 0.6rem;
+    color: rgb(133, 133, 133);
+  }
+  
+  .nlform{
+    text-align: center;
+    padding: 2rem 2rem 2rem 2rem;
+  }
+  
+  .nlform h3{
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .nlform p, .nlform label{
+    font-size: 1.8rem;
+  }
+  
+  .nlform input[type="text"]{
+    text-align: center;
+    color: rgb(255, 48, 83);
+    font-size: 2rem;
+    background-color: inherit;
+    border: none;
+    border-bottom: 0.1rem solid rgb(255, 48, 83);
+    width: 90%;
+    height: 5rem;
+    margin-bottom: 1.6rem;
+  }
+  
+  .nlform__label::after{
+    content: " *";
+  }
+  
+  .btn--form{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: rgb(255, 48, 83);
+    padding: 1.8rem 3.6rem;
+    border: none;
+    border-radius: 20rem;
+    margin-right: 0;
+  }
+  
+  .outro{
+    text-align: center;
+  }
+  
+  .outro h3{
+    padding-top: 4rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: black;
+  }
+  
+  .outro p{
+    font-size: 2rem;
+    padding: 0rem 2rem 2rem 2rem;
+    margin-top: 1rem;
+  }
+  
+  .btn--outro{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: rgb(23, 65, 180);
+    padding: 1.8rem 3.6rem;
+    border: none;
+    border-radius: 20rem;
+    margin-top: 2rem;
+    margin-right: 0;
+  }
+  
+  footer{
+    padding-left: 2rem;
+    padding-top: 2rem;
+    margin-top: 8rem;
+    height: 20rem;
+    width: 100% - 2rem;
+    background-color: #1741b4;
+  }
+  
+  footer a{
+    color: #98ade6;
+    text-decoration: none;
+    font-size: 1.4rem;
+  }
+  
+  footer p{
+    color: white;
+  }
+  
+}
+
+
+/* FOR DESKTOP */
+
+@media only screen and (min-width: 768px){
+  body {
+    background-color: #C7C9F7;
+    margin: 0;
+    padding: 0;
+    margin-right: 0;
     font-size: 1.6rem; 
     line-height: 1.5; 
   
@@ -668,5 +1050,4 @@ footer p{
   .nlform input[type="text"]{
     width: 50%;
   }
-  
 }

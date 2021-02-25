@@ -21,8 +21,9 @@
       <header>
         <nav>
           <ul class="navbar-1">
-            <i class="navbar-1__in-logo fab fa-invision"></i>
-            <li class="logo"><a href="">invision</a></li>
+            <i class="navbar-1__in-logo fab fa-invision mobile-only"></i>
+            <li class="logo desktop-only"><a href="">invision</a></li>
+            <li class="logo mobile-only"><a href="">Design Better</a></li>
             <li class="desktop-only"><a href="">Product</a></li>
             <li class="desktop-only"><a href="">Education</a></li>
             <li class="desktop-only"><a href="">Blog</a></li>
@@ -40,8 +41,8 @@
     <ul class="navbar-2">
       <li class="logo desktop-only"><i class="fab fa-invision"></i><a href="">Design Better</a></li>
       <li><a href="">Design Maturity Model</a></li>
-      <li><a href="">Books</a></li>
-      <li><a href="">Podcast</a></li>
+      <li class="mobile-hide"><a href="">Books</a></li>
+      <li class="mobile-hide"><a href="">Podcast</a></li>
       <li class="desktop-only"><a href="">Conversations</a></li>
 
       <li class="mobile-only"><a href="">More</a></li>
@@ -143,8 +144,7 @@
     </div>
 
   <section class="nlform">
-    <h3>Short, insightful interviews</h3>
-    <h3>with technologists and creatives</h3>
+    <h3>Short, insightful interviews<br>with technologists and creatives</h3>
     <p>Get the Conversations newsletter, sent a few times a month.</p>
 
     <form action="#" method="GET">
@@ -189,9 +189,11 @@
       </aside>
 
       <footer>
-        <a href="#">INVISIONAPP.COM</a>
-        <a href="#">TERMS OF SERVICE</a>
-        <a href="#">PRIVACY</a>
+        <div class="links">
+          <a href="#">INVISIONAPP.COM</a>
+          <a href="#">TERMS OF SERVICE</a>
+          <a href="#">PRIVACY</a>
+        </div>
 
         <img src="" alt="">
         <p>Design Better</p>

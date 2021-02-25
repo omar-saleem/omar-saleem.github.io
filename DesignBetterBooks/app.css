@@ -382,7 +382,7 @@ footer p{
 
 /* FOR TABLETS */
 
-@media only screen and (min-width: 520px){
+@media only screen and (min-width: 580px){
 
   body {
     background-color: #C7C9F7;
@@ -405,6 +405,10 @@ footer p{
   .spacer {
     width: 100%;
     margin: 0;
+  }
+
+  .mobile-hide{
+    display: inherit;
   }
   
   .sticky-nav{
@@ -753,10 +757,159 @@ footer p{
   
 }
 
+/* BIGGER TABLET */
+@media only screen and (min-width: 772px){
+  .intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 77rem;
+    /* max-height: 90vh; */
+    align-items: center;
+    position: relative;
+  }
+  
+  .intro__heading{
+    background-color: rgb(0, 21, 93);
+    color: white;
+  
+    height: 46rem;
+    width: 100%;
+  
+    justify-self: flex-start;
+    box-sizing: border-box;
+    padding: 6%;
+    padding-top: 1%;
+    padding-right: 4%;
+  }
+  
+  .intro__heading h1{
+    font-size: 4.4rem;
+    font-family: Prompt, sans-serif;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    margin-top: 2.4rem;
+  }
+  
+  .intro__heading p{
+    font-size: 1.8rem;
+    line-height: 200%;
+  }
+  
+  .btn--intro{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00155D;
+    background-color: #54F5AF;
+    padding: 1.8rem 3.6rem;
+    border: none;
+    border-radius: 20rem;
+    margin-bottom: 3rem;
+  }
+  
+  .intro__photo{
+    width: 100%;
+    height: 30em;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://s3.amazonaws.com/designco-web-assets/uploads/2020/07/Cover-min.png");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+
+  .library{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  .library__intro{
+    text-align: center;
+    padding: 1.2rem 8rem 7rem 8rem;
+    width: 100%;
+  }
+  
+  .library__intro__books{
+    font-size: 1.4rem !important;
+    letter-spacing: 0.1rem !important;
+    font-weight: 600 !important;
+    padding-top: 4rem;
+  }
+  
+  .library__intro h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 1.2rem;
+    padding-top: 1.2rem;
+  }
+  
+  .library__intro p{
+    font-size: 2rem;
+  }
+  
+  .library__book{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    padding-bottom: 4rem;
+  }
+  
+  .library__book img{
+    width: 80%;
+    padding-left: 1rem;
+  }
+  
+  .library__book__info{
+    width: 80%;
+    height: 10rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+  }
+  
+  .library__book h3{
+    padding-left: 0;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: black;
+  }
+  
+  .library__book a{
+    text-decoration: none;
+  }
+  
+  .library__book a:visited{
+    color: black;
+  }
+  
+  .library__book a:hover{
+    text-decoration: underline;
+    color: rgb(0, 119, 255);
+  }
+  
+  .library__book p{
+    padding-left: 0;
+    font-size: 1.7rem;
+    margin-top: 0.6rem;
+    color: rgb(133, 133, 133);
+  }
+}
+
 
 /* FOR DESKTOP */
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1200px){
   body {
     background-color: #C7C9F7;
     margin: 0;
@@ -791,6 +944,11 @@ footer p{
 
   .desktop-only{
     display: initial;
+  }
+
+  .navbar-1__invision-logo{
+    padding-left: 2.6rem;
+    padding-right: 17rem !important;
   }
 
   ul.navbar-2{
@@ -1002,19 +1160,21 @@ footer p{
   }
   
   .library__book{
+    flex-direction: column;
     display: flex;
     justify-content: space-evenly;
     width: 29%;
     padding-bottom: 4rem;
+    max-height: 60rem; 
   }
   
   .library__book img{
-    width: 44%;
-    padding-left: 1rem;
+    width: 80%;
   }
   
   .library__book__info{
-    width: 44%;
+    width: 80%;
+    height: 12rem;
   }
   
   .library__book h3{
@@ -1048,5 +1208,10 @@ footer p{
   
   .nlform input[type="text"]{
     width: 50%;
+  }
+
+  footer>div :last-child{
+    padding-left: 2rem;
+    padding-right: 3rem;
   }
 }

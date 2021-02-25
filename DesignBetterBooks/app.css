@@ -356,11 +356,10 @@ aside{
 }
 
 footer{
-  padding-left: 2rem;
   padding-top: 2rem;
   margin-top: 8rem;
   height: 20rem;
-  width: 100% - 2rem;
+  width: 100%;
   background-color: #1741b4;
   text-align: center;
 }

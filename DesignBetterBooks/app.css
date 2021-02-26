@@ -2,6 +2,17 @@ html{
   font-size: 62.5%;
 }
 
+@keyframes main-back{
+  0%, 100%{
+    background-color: #C7C9F7;
+  }
+  50%{
+    background-color: rgb(160, 246, 174);
+  }
+}
+
+/* #C7C9F7 */
+
 body {
   background-color: #C7C9F7;
   margin: 0;
@@ -10,7 +21,7 @@ body {
   /* font-size: 16px; */
   font-size: 1.6rem; 
   line-height: 1.5; 
-
+  animation: main-back 3s infinite;
   font-family: 'PT Sans', sans-serif;
 }
 
@@ -535,7 +546,8 @@ footer p:last-child{
 @media only screen and (min-width: 1200px){
   body {
     width: 99.1vw;
-    /* background-color: white; */
+    background-color: white;
+    animation: none;
   }
   
   .container {
@@ -550,6 +562,7 @@ footer p:last-child{
     bottom:0;
     left:0;
     z-index: 10;
+    animation: main-back 3s infinite;
   }
 
   .leftborder{
@@ -560,6 +573,7 @@ footer p:last-child{
     bottom:0;
     left:0;
     z-index: 10;
+    animation: main-back 3s infinite;
   }
 
   .rightborder{
@@ -570,6 +584,7 @@ footer p:last-child{
     bottom:0;
     right:0;
     z-index: 10;
+    animation: main-back 3s infinite;
   }
 
   .mobile-only{

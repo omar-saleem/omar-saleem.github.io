@@ -285,7 +285,7 @@ div.icon{
   background-color: inherit;
   border: none;
   border-bottom: 0.1rem solid rgb(255, 48, 83);
-  width: 90%;
+  width: 86%;
   height: 5rem;
   margin-bottom: 1.6rem;
 }
@@ -344,21 +344,38 @@ footer{
   width: 100%;
   background-color: #1741b4;
   text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 footer a{
   color: #98ade6;
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  padding: 0.6rem 0;
 }
 
 footer .links{
   display:flex;
+  flex-direction: column;
   justify-content: space-evenly;
+  padding-left: 2.4rem;
+}
+
+.footer__logo{
+  margin-left: auto;
+  padding-right: 2.4rem;
 }
 
 footer p{
-  color: white;
+  color: #98ade6;
+}
+
+footer p:last-child{
+  font-size:1.4rem;
+  font-weight: bold;
+  font-variant-caps:all-small-caps;
+  padding-bottom: 2.2rem;
 }
 
 
@@ -396,6 +413,10 @@ footer p{
   .outro h3{
     padding-top: 4rem;
   }  
+
+  .nlform input[type="text"]{
+    width: 66%;
+  }
 }
 
 /* BIGGER TABLET */
@@ -468,6 +489,43 @@ footer p{
   
   .library__book p{
     font-size: 1.7rem;
+  }
+
+  .nlform input[type="text"]{
+    width: 50%;
+  }
+
+  footer a{
+    color: #98ade6;
+    text-decoration: none;
+    font-size: 1.4rem;
+    width: 16rem;
+  }
+  
+  footer .links{
+    display:flex;
+    justify-content: space-evenly;
+    width: 50rem;
+  }
+
+  footer .footer__logo{
+    display: flex;
+    padding-right: 2rem;
+  }
+
+  footer .footer__logo p{
+    color: #98ade6;
+    padding-top: 3rem;
+  }
+
+  footer .footer__logo p:last-child{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: -2rem;
+    padding-left: 2rem;
+    /* padding-top: 4rem; */
   }
 }
 
@@ -575,12 +633,12 @@ footer p{
   
   .intro{
     justify-content: flex-end;
-    height: 90rem;
+    height: 86rem;
     max-height: 90vh;
   }
   
   .intro__heading{
-    height: 48rem;
+    height: 44rem;
     max-height: 70%;
     width: 72rem;
     flex: 0 1 40%;
@@ -592,6 +650,10 @@ footer p{
   
   .intro__heading h1{
     font-size: 5.4rem;
+  }
+
+  .intro__heading p{
+    font-size:2rem;
   }
   
   .btn--intro{
@@ -614,8 +676,10 @@ footer p{
   .library{
     flex-direction: row;
     flex-wrap: wrap;
-    padding-right: 2rem;
     justify-content: space-evenly;
+    box-sizing: border-box;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   
   .library__intro{
@@ -625,40 +689,68 @@ footer p{
   
   .library__intro__books{
     padding-top: 4rem;
+    font-size: 1.6rem !important;
+  }
+
+  .library__intro h2{
+    font-size: 4rem;
+  }
+
+  .library__intro p:last-child{
+    margin-bottom: 6rem;
   }
 
   .library__book{
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     width: 29%;
-    padding-bottom: 10rem;
-    max-height: 60rem; 
+    margin-bottom: 4rem;
+    height: 70rem; 
   }
   
   .library__book img{
-    width: 80%;
+    width: 100%;
+    padding-left: 0;
   }
   
   .library__book__info{
-    width: 80%;
+    width: 100%;
     height: 20rem;
-    margin-bottom: 2rem;
   }
   
   .library__book h3{
-    font-size: 2.4rem;
+    font-size: 2.8rem;
   }
 
   .library__book p{
-    font-size: 1.7rem;
+    font-size: 2.0rem;
+  }
+
+  .outro>h3{
+    font-size: 4.4rem;
+  }
+
+  .nlform>h3{
+    font-size: 3.6rem;
   }
   
   .nlform input[type="text"]{
-    width: 50%;
+    width: 40%;
   }
 
-  footer>div :last-child{
-    padding-left: 2rem;
-    padding-right: 3rem;
+  footer{
+    padding-bottom: 3.4rem !important;
+    height:14rem;
+  }
+}
+
+@media only screen and (min-width: 1720px){
+  .library{
+    box-sizing: border-box;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .library__book{
+    height: 86rem;
   }
 }

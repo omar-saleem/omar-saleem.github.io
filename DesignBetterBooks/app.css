@@ -32,7 +32,7 @@ body {
 .sticky-nav{
   position: sticky;
   top: 0;
-  z-index:10;
+  z-index:9;
   background-color: white;
 }
 */
@@ -426,7 +426,7 @@ footer p:last-child{
   }
   
   .intro__heading{
-    height: 46rem;
+    height: initial;
   }
   
   .intro__photo{
@@ -535,19 +535,40 @@ footer p:last-child{
 @media only screen and (min-width: 1200px){
   body {
     width: 99.1vw;
+    /* background-color: white; */
   }
   
   .container {
-    max-width: 97.6%;
+    max-width: 100%;
   }
 
   .bottomborder{
-    height:2.3rem;
+    height:2.2rem;
     width:100%;
     background-color: inherit;
     position: fixed;
     bottom:0;
     left:0;
+    z-index: 10;
+  }
+
+  .leftborder{
+    width:2.2rem;
+    height:100%;
+    background-color: inherit;
+    position: fixed;
+    bottom:0;
+    left:0;
+    z-index: 10;
+  }
+
+  .rightborder{
+    width:2.2rem;
+    height:100%;
+    background-color: inherit;
+    position: fixed;
+    bottom:0;
+    right:0;
     z-index: 10;
   }
 
@@ -638,13 +659,14 @@ footer p:last-child{
   }
   
   .intro__heading{
-    height: 44rem;
-    max-height: 70%;
-    width: 72rem;
+    /* height: 62%; */
+    width: 45%;
     flex: 0 1 40%;
     position: absolute;
+    padding-bottom: 2%;
     left: 0;
-    top:21rem;
+    top:50%;
+    transform: translate(0, -50%);
     z-index: 2;
   }
   
@@ -744,13 +766,31 @@ footer p:last-child{
   }
 }
 
-@media only screen and (min-width: 1720px){
+@media only screen and (min-width: 1350px){
+  .intro__heading{
+    width: 40%;
+    /* height: 45%; */
+  }
+}
+
+@media only screen and (min-width: 1784px){
+  .intro__heading{
+    /* height: 50%; */
+  }
+
   .library{
-    box-sizing: border-box;
     padding-left: 4rem;
     padding-right: 4rem;
   }
   .library__book{
     height: 86rem;
+  }
+}
+
+
+@media only screen and (min-width: 2000px){
+  .container{
+    box-sizing: border-box;
+    width: 1800px;
   }
 }

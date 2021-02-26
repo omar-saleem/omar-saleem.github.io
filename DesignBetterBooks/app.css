@@ -3,11 +3,47 @@ html{
 }
 
 @keyframes main-back{
-  0%, 100%{
+  0%{
     background-color: #C7C9F7;
   }
-  50%{
-    background-color: rgb(160, 246, 174);
+  33%{
+    background-color: #1741b4;
+  }
+  67%{
+    background-color: #e9a3ba;
+  }
+  100%{
+    background-color: #C7C9F7;
+  }
+}
+
+@keyframes main-color{
+  0%{
+    color: #6c71f5;
+  }
+  33%{
+    color: #1741b4;
+  }
+  67%{
+    color: #e93c75;
+  }
+  100%{
+    color: #6c71f5;
+  }
+}
+
+@keyframes main-border{
+  0%{
+    border-color: #6c71f5;
+  }
+  33%{
+    border-color: #1741b4;
+  }
+  67%{
+    border-color: #e93c75;
+  }
+  100%{
+    border-color: #6c71f5;
   }
 }
 
@@ -21,7 +57,7 @@ body {
   /* font-size: 16px; */
   font-size: 1.6rem; 
   line-height: 1.5; 
-  animation: main-back 3s infinite;
+  animation: main-back 8s infinite;
   font-family: 'PT Sans', sans-serif;
 }
 
@@ -50,7 +86,7 @@ body {
 
 .navbar-2{
   position: sticky;
-  top: 0px;
+  top: 0;
 }
 
 ul.navbar-2{
@@ -125,9 +161,10 @@ div.icon{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
-  width: 40px;
-  border: 1px solid #0828CC;
+  height: 4rem;
+  width: 4rem;
+  border: 0.1rem solid #0828CC;
+  animation: main-border 8s infinite;
   border-radius: 50%;
   margin-bottom: 0.8rem;
   background-color: white;
@@ -142,7 +179,7 @@ div.icon{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 81rem;
+  height: 82rem;
   /* max-height: 90vh; */
   align-items: center;
   position: relative;
@@ -152,7 +189,7 @@ div.icon{
   background-color: rgb(0, 21, 93);
   color: white;
 
-  height: 45rem;
+  height: 46rem;
   width: 100%;
 
   justify-self: flex-start;
@@ -291,11 +328,13 @@ div.icon{
 
 .nlform input[type="text"]{
   text-align: center;
-  color: rgb(255, 48, 83);
+  color: rgb(167, 17, 42);
+  animation: main-color 8s infinite;
   font-size: 2rem;
   background-color: inherit;
   border: none;
-  border-bottom: 0.1rem solid rgb(255, 48, 83);
+  border-bottom: 0.1rem solid rgb(214, 52, 79);
+  animation: main-border 8s infinite;
   width: 86%;
   height: 5rem;
   margin-bottom: 1.6rem;
@@ -314,6 +353,7 @@ div.icon{
   border: none;
   border-radius: 20rem;
   margin-right: 0;
+  animation: main-back 8s infinite;
 }
 
 .outro{
@@ -346,37 +386,41 @@ div.icon{
   border-radius: 20rem;
   margin-top: 2rem;
   margin-right: 0;
+  animation: main-back 8s infinite;
 }
 
 footer{
-  padding-top: 2rem;
+  padding-top: 0rem;
   margin-top: 8rem;
-  height: 20rem;
+  height: 14rem;
   width: 100%;
-  background-color: #1741b4;
   text-align: center;
   display: flex;
+  justify-content: center;
   align-items: center;
+  animation: main-back 8s infinite;
 }
 
 footer a{
-  color: #98ade6;
+  color: #ffffff;
   text-decoration: none;
-  font-size: 1.2rem;
-  padding: 0.6rem 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 0.6rem 0.4rem;
+  width: 16rem;
 }
 
 footer .links{
   display:flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-evenly;
-  padding-left: 2.4rem;
 }
 
-.footer__logo{
+/* .footer__logo{
   margin-left: auto;
   padding-right: 2.4rem;
-}
+} 
 
 footer p{
   color: #98ade6;
@@ -387,6 +431,16 @@ footer p:last-child{
   font-weight: bold;
   font-variant-caps:all-small-caps;
   padding-bottom: 2.2rem;
+} */
+
+@media only screen and (min-width: 484px){ 
+  .intro{
+    height: 78rem;
+  }
+
+  .intro__heading{
+    height: 42rem;
+  }
 }
 
 
@@ -398,11 +452,11 @@ footer p:last-child{
   }
   
   .intro{
-    height: 76rem;
+    height: 73rem;
   }
   
   .intro__heading{
-    height: 40rem;
+    height: 38rem;
   }
   
   .library__book img{
@@ -507,19 +561,19 @@ footer p:last-child{
   }
 
   footer a{
-    color: #98ade6;
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     width: 16rem;
   }
   
   footer .links{
     display:flex;
-    justify-content: space-evenly;
+    flex-direction: row;
     width: 50rem;
+    justify-content: space-evenly;
   }
 
-  footer .footer__logo{
+  /* footer .footer__logo{
     display: flex;
     padding-right: 2rem;
   }
@@ -536,8 +590,7 @@ footer p:last-child{
     position: relative;
     top: -2rem;
     padding-left: 2rem;
-    /* padding-top: 4rem; */
-  }
+  } */
 }
 
 
@@ -562,7 +615,7 @@ footer p:last-child{
     bottom:0;
     left:0;
     z-index: 10;
-    animation: main-back 3s infinite;
+    animation: main-back 8s infinite;
   }
 
   .leftborder{
@@ -573,7 +626,7 @@ footer p:last-child{
     bottom:0;
     left:0;
     z-index: 10;
-    animation: main-back 3s infinite;
+    animation: main-back 8s infinite;
   }
 
   .rightborder{
@@ -584,7 +637,7 @@ footer p:last-child{
     bottom:0;
     right:0;
     z-index: 10;
-    animation: main-back 3s infinite;
+    animation: main-back 8s infinite;
   }
 
   .mobile-only{
@@ -596,8 +649,12 @@ footer p:last-child{
   }
 
   .navbar-1__invision-logo{
-    padding-left: 2.6rem;
+    padding-left: 5rem;
     padding-right: 17rem !important;
+  }
+
+  .navbar-2 .logo{
+    padding-left: 5rem;
   }
 
   ul.navbar-2{
@@ -631,6 +688,7 @@ footer p:last-child{
   aside .fa-twitter, aside .fa-facebook-f, aside .fa-linkedin-in, aside .fa-link {
     background-color: white;
     color: #0828CC;
+    animation: main-color 8s infinite;
     font-size: 2rem;
     padding: 0;
     margin: 0;
@@ -743,6 +801,8 @@ footer p:last-child{
     width: 29%;
     margin-bottom: 4rem;
     height: 70rem; 
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
   
   .library__book img{
@@ -776,7 +836,6 @@ footer p:last-child{
   }
 
   footer{
-    padding-bottom: 3.4rem !important;
     height:14rem;
   }
 }
@@ -788,17 +847,15 @@ footer p:last-child{
   }
 }
 
-@media only screen and (min-width: 1784px){
-  .intro__heading{
-    /* height: 50%; */
-  }
-
+@media only screen and (min-width: 1710px){
   .library{
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 22rem;
+    padding-right: 22rem;
   }
   .library__book{
-    height: 86rem;
+    margin-bottom: 4rem;
+    padding-bottom: 0;
+    height: 74rem;
   }
 }
 
@@ -806,6 +863,32 @@ footer p:last-child{
 @media only screen and (min-width: 2000px){
   .container{
     box-sizing: border-box;
-    width: 1800px;
+    width: 2000px;
+  }
+}
+
+@media only screen and (min-width: 2560px){
+  html{
+    font-size: 80%;
+  }
+  .container{
+    width: 2200px;
+  }
+  .library__book{
+    height: 84rem;
+  }
+}
+
+@media only screen and (min-width: 3840px){
+  html{
+    font-size: 110%;
+  }
+  .container{
+    width: 3000px;
+  }
+  .library__book{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 80rem;
   }
 }
